@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-area">
+    <h1>⚡ Speed Typing Challenge</h1>
+
+    <p id="countdown"></p>
+
+    <div id="quote" class="quote-box">
+      <span id="quote-output"></span>
+    </div>
+
+    <textarea id="input" placeholder="Wait for countdown..." disabled></textarea>
+
+    <button id="submit-btn" disabled>Submit</button>
+
+    <div id="stats">
+      <p>⏱ Time: <span id="timer">0</span> sec</p>
+    </div>
+
+    <div id="result" style="display:none; margin-top:20px;"></div>
+
+    <button onclick="startCountdown()">Start New</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
